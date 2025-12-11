@@ -85,7 +85,9 @@
 | 6 | フィードバックの共有方法 | 5分 |
 | 7 | 【確認テスト】Copilot Chat | 5分 |
 
-**参照**: [GitHub Copilot の高度な機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/advanced-github-copilot/2-advanced-github-copilot-features)
+**参照**:
+- [GitHub Copilot の高度な機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/advanced-github-copilot/2-advanced-github-copilot-features)
+- [GitHub Copilot チャット - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/3-git-hub-copilot-chat)
 
 ---
 

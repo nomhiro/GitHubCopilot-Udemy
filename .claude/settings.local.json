@@ -50,6 +50,7 @@
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "microsoft.docs.mcp",
+    "context7",
     "deepwiki",
     "serena"
   ]
