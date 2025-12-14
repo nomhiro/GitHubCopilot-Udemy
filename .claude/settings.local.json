@@ -44,7 +44,10 @@
       "Bash(grep:*)",
       "Bash(pip show:*)",
       "Bash(ren:*)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "Bash(done)",
+      "Bash(wc:*)",
+      "Bash(ls:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

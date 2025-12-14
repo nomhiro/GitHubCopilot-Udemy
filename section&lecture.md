@@ -56,9 +56,49 @@
 | 5 | 各プランの違い比較（データ除外・IP補償・請求） | 10分 |
 | 6 | 【ハンズオン】プランの選び方と導入手順 | 8分 |
 
+**参照**: [GitHub Copilot プランと管理・カスタマイズ機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/2-explore-github-copilot-plans-associated-management-customization-features)
+
 ---
 
-## セクション5: IDEでのGitHub Copilot活用（31%の一部）- 8レクチャー
+## セクション5: GitHub Copilot コーディングエージェント - 6レクチャー
+
+| # | レクチャータイトル | 時間目安 |
+|---|-------------------|---------|
+| 1 | コーディングエージェントの概要と有効化 | 10分 |
+| 2 | セキュリティ、リスク、制限事項 | 10分 |
+| 3 | タスクの割り当て、追跡、問題解決 | 12分 |
+| 4 | カスタマイズ、拡張、検証 | 10分 |
+| 5 | 責任ある使用とベストプラクティス | 8分 |
+| 6 | 【確認テスト】コーディングエージェント | 10分 |
+
+**参照**:
+- [GitHub Copilot コーディング エージェントを使用して開発を加速する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-code-agent/)
+- [コパイロット コーディング エージェント タスクの割り当て、追跡、問題解決 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-code-agent/3-assign-track-troubleshoot-copilot-code-agent-tasks)
+- [Copilot コーディング エージェントのカスタマイズ、拡張、検証 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-code-agent/4-customize-extend-validate-copilot-code-agent)
+
+---
+
+## セクション6: GitHub Copilot コードレビューとPull Request - 7レクチャー
+
+| # | レクチャータイトル | 時間目安 |
+|---|-------------------|---------|
+| 1 | Copilotがレビュープロセスに追加するもの | 10分 |
+| 2 | コードレビューでのCopilot提案の活用 | 12分 |
+| 3 | PRサマリー生成とデータ書式設定 | 10分 |
+| 4 | カスタムレビュー手順とセキュリティ修正 | 10分 |
+| 5 | 自動レビューの設定とスケーリング | 12分 |
+| 6 | 影響の測定とPRUの最適化 | 10分 |
+| 7 | 【確認テスト】コードレビューとPull Request | 8分 |
+
+**参照**:
+- [GitHub Copilot がレビュー プロセスに追加するもの - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/code-reviews-pull-requests-github-copilot/2-github-copilot-review-process)
+- [GitHub.com の校閲者としての Copilot の使用 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/code-reviews-pull-requests-github-copilot/3-copilot-reviewer-github)
+- [問題を早期にキャッチし、Copilotでレビューを自動化する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/code-reviews-pull-requests-github-copilot/4-issues-early-automated-reviews-copilot)
+- [影響の測定と Premium 要求ユニット (PRU) の最適化 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/code-reviews-pull-requests-github-copilot/5-impact-optimization-premium-request-units)
+
+---
+
+## セクション7: IDEでのGitHub Copilot活用（31%の一部）- 9レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -69,42 +109,55 @@
 | 5 | 【ハンズオン】インラインチャットでコードを修正する | 12分 |
 | 6 | 例外処理とエラー対応の提案活用 | 10分 |
 | 7 | Editor設定ファイルの構成 | 8分 |
-| 8 | 【確認テスト】IDEでのCopilot活用 | 5分 |
+| 8 | GitHub MCP ServerによるAIワークフローの強化 | 10分 |
+| 9 | 【確認テスト】IDEでのCopilot活用 | 5分 |
+
+**参照**:
+- [GitHub MCP Server を使用して AI ワークフローを簡素化する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/2-simplify-workflow)
+- [VS Code で GitHub MCP サーバーを構成、接続、および使用する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/3-configure-connect)
 
 ---
 
-## セクション6: GitHub Copilot Chat（31%の一部）- 7レクチャー
+## セクション8: GitHub Copilot Chat & エージェントモード（31%の一部）- 10レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
 | 1 | Copilot Chatの概要と効果的なユースケース | 10分 |
 | 2 | スラッシュコマンド一覧と使い方 | 12分 |
 | 3 | 【ハンズオン】Chatを使ったコード説明・生成 | 15分 |
-| 4 | Copilot Chatのパフォーマンス向上テクニック | 10分 |
+| 4 | チャットエージェントの活用方法 | 10分 |
 | 5 | Copilot Chatの制限事項とベストプラクティス | 10分 |
 | 6 | フィードバックの共有方法 | 5分 |
-| 7 | 【確認テスト】Copilot Chat | 5分 |
+| 7 | GitHub Copilot エージェントモードの概要 | 12分 |
+| 8 | エージェントモードの自律開発支援機能 | 12分 |
+| 9 | MCPとエージェントモードの連携 | 10分 |
+| 10 | 【確認テスト】Copilot Chat & エージェントモード | 10分 |
 
 **参照**:
 - [GitHub Copilot の高度な機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/advanced-github-copilot/2-advanced-github-copilot-features)
 - [GitHub Copilot チャット - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/3-git-hub-copilot-chat)
+- [GitHub Copilot エージェント モードとは - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/2-what-is-agent-mode)
+- [GitHub Copilot エージェントモードの自律開発支援 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/3-explore-the-power)
+- [Copilot チャットでの GitHub MCP サーバーの使用 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/4-use-github-copilot-chat)
 
 ---
 
-## セクション7: GitHub Copilot Enterprise機能（31%の一部）- 6レクチャー
+## セクション9: GitHub Copilot Enterprise機能（31%の一部）- 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
-| 1 | GitHub.comでのCopilot Chat | 10分 |
-| 2 | プルリクエストサマリー機能 | 10分 |
+| 1 | GitHub.comでのCopilotアクセスと概要 | 12分 |
+| 2 | Pull Request支援機能 | 12分 |
 | 3 | ナレッジベースの概念と利点 | 12分 |
 | 4 | ナレッジベースの作成・管理・検索手順 | 15分 |
 | 5 | カスタムモデルの活用 | 10分 |
 | 6 | 組織監査ログとREST APIによる管理 | 12分 |
 
+**参照**: [GitHub.com 上の GitHub Copilot - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/4-git-hub-copilot-github-web)
+
 ---
 
-## セクション8: GitHub Copilot Spaces - 5レクチャー
+## セクション10: GitHub Copilot Spaces - 5レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -118,7 +171,7 @@
 
 ---
 
-## セクション9: CLIでのGitHub Copilot（31%の一部）- 4レクチャー
+## セクション11: CLIでのGitHub Copilot（31%の一部）- 5レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -126,10 +179,13 @@
 | 2 | 一般的なCLIコマンドの紹介 | 10分 |
 | 3 | 【ハンズオン】CLIでCopilotを使ってみる | 12分 |
 | 4 | CLIの設定オプション | 8分 |
+| 5 | 【確認テスト】CLIでのGitHub Copilot | 5分 |
+
+**参照**: [コマンド ライン用の GitHub Copilot - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line)
 
 ---
 
-## セクション10: GitHub Copilotのしくみとデータ処理（15%）- 7レクチャー
+## セクション12: GitHub Copilotのしくみとデータ処理（15%）- 7レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -143,7 +199,7 @@
 
 ---
 
-## セクション11: プロンプト作成とプロンプトエンジニアリング（9%）- 8レクチャー
+## セクション13: プロンプト作成とプロンプトエンジニアリング（9%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -160,7 +216,7 @@
 
 ---
 
-## セクション12: AIの開発者ユースケース（14%）- 8レクチャー
+## セクション14: AIの開発者ユースケース（14%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -173,9 +229,14 @@
 | 7 | 生産性APIの使用方法 | 10分 |
 | 8 | Copilot活用の制限と注意点 | 8分 |
 
+**参照**:
+- [AI を使用して開発者の生産性を向上させる - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/developer-use-cases-for-ai-with-github-copilot/2-boost-developer-productivity)
+- [ソフトウェア開発ライフサイクル (SDLC) における AI - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/developer-use-cases-for-ai-with-github-copilot/4-ai-software-development-lifecycle)
+- [制限事項を理解し、影響を測定する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/developer-use-cases-for-ai-with-github-copilot/5-understand-limitations-measure-impact)
+
 ---
 
-## セクション13: GitHub Copilotを使用したテスト（9%）- 6レクチャー
+## セクション15: GitHub Copilotを使用したテスト（9%）- 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -186,9 +247,15 @@
 | 5 | アサーション作成の支援 | 10分 |
 | 6 | 【確認テスト】テスト生成 | 5分 |
 
+**参照**:
+- [単体テスト ツールと環境を確認する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/develop-unit-tests-using-github-copilot-tools/2-examine-github-copilot-support-unit-tests)
+- [テストの生成スマート アクションを使用して単体テストを作成する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/develop-unit-tests-using-github-copilot-tools/3-create-unit-tests-generate-tests-smart-action)
+- [インライン チャットを使用して単体テストを作成する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/develop-unit-tests-using-github-copilot-tools/4-create-unit-tests-inline-chat)
+- [チャット ビュー モードを使用して単体テストを作成する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/develop-unit-tests-using-github-copilot-tools/5-create-unit-tests-chat-view-modes)
+
 ---
 
-## セクション14: プライバシーとコンテキスト除外（15%）- 8レクチャー
+## セクション16: プライバシーとコンテキスト除外（15%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -201,9 +268,13 @@
 | 7 | GitHub.comでのCopilot設定構成 | 10分 |
 | 8 | セキュリティチェックと警告 | 8分 |
 
+**参照**:
+- [GitHub Copilot での契約上の保護と一致するパブリック コードの無効化 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/3-github-copilot-contractual-protections-disabling-matching-public-code)
+- [コンテンツの除外を管理する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/4-manage-content-exclusions)
+
 ---
 
-## セクション15: セキュリティ・パフォーマンス・トラブルシューティング - 6レクチャー
+## セクション17: セキュリティ・パフォーマンス・トラブルシューティング - 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -214,9 +285,11 @@
 | 5 | コンテキスト除外が適用されない場合の対処 | 8分 |
 | 6 | 提案がない場合のCopilotトリガー方法 | 8分 |
 
+**参照**: [GitHub Copilot に関する一般的な問題のトラブルシューティング - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/5-troubleshoot-common-issues-with-github-copilot)
+
 ---
 
-## セクション16: 試験対策と総まとめ - 5レクチャー
+## セクション18: 試験対策と総まとめ - 5レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -232,9 +305,9 @@
 
 | 項目 | 数値 |
 |------|------|
-| **総セクション数** | 16セクション |
-| **総レクチャー数** | 101レクチャー |
-| **推定総時間** | 約14〜15時間 |
+| **総セクション数** | 18セクション |
+| **総レクチャー数** | 115レクチャー |
+| **推定総時間** | 約16〜17時間 |
 | **ハンズオン数** | 14本 |
-| **確認テスト** | 5本 |
+| **確認テスト** | 8本 |
 | **模擬試験** | 2回（計60問） |

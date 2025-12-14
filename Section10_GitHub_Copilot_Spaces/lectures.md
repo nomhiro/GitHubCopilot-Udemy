@@ -1,4 +1,4 @@
-# セクション8: GitHub Copilot Spaces
+# セクション10: GitHub Copilot Spaces
 
 ## 参照リソース
 - [GitHub Copilot Spaces の概要 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/introduction-copilot-spaces/)
