@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90D9"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    ソフトウェア開発ライフサイクル（SDLC）でのGitHub Copilot活用
+  </text>
+
+  <!-- Phase boxes -->
+  <!-- 1. Requirements Analysis -->
+  <rect x="20" y="60" width="140" height="80" rx="8" fill="url(#blueGrad)" opacity="0.7"/>
+  <text x="90" y="95" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" fill="white">要件分析</text>
+  <text x="90" y="115" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">プロトタイプ作成</text>
+  <text x="90" y="130" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">API設計提案</text>
+
+  <!-- Arrow 1 -->
+  <line x1="165" y1="100" x2="190" y2="100" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 2. Design & Development -->
+  <rect x="195" y="60" width="140" height="80" rx="8" fill="url(#blueGrad)"/>
+  <text x="265" y="95" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" fill="white">設計・開発</text>
+  <text x="265" y="115" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">定型コード生成</text>
+  <text x="265" y="130" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">設計パターン実装</text>
+
+  <!-- Star indicator for main phase -->
+  <text x="325" y="75" font-family="sans-serif" font-size="16" fill="#E53935">★</text>
+
+  <!-- Arrow 2 -->
+  <line x1="340" y1="100" x2="365" y2="100" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 3. Testing & QA -->
+  <rect x="370" y="60" width="140" height="80" rx="8" fill="url(#blueGrad)" opacity="0.9"/>
+  <text x="440" y="95" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" fill="white">テスト・品質保証</text>
+  <text x="440" y="115" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">単体テスト生成</text>
+  <text x="440" y="130" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">エッジケース識別</text>
+
+  <!-- Arrow 3 -->
+  <line x1="515" y1="100" x2="540" y2="100" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 4. Deployment -->
+  <rect x="545" y="60" width="140" height="80" rx="8" fill="url(#blueGrad)" opacity="0.6"/>
+  <text x="615" y="95" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" fill="white">展開（デプロイ）</text>
+  <text x="615" y="115" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">構成ファイル生成</text>
+  <text x="615" y="130" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">スクリプト支援</text>
+
+  <!-- Arrow 4 -->
+  <line x1="690" y1="100" x2="715" y2="100" stroke="#4A90D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 5. Maintenance -->
+  <rect x="720" y="60" width="140" height="80" rx="8" fill="url(#blueGrad)" opacity="0.7"/>
+  <text x="790" y="95" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" fill="white">メンテナンス</text>
+  <text x="790" y="115" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">バグ修正提案</text>
+  <text x="790" y="130" text-anchor="middle" font-family="Meiryo, sans-serif" font-size="10" fill="white">レガシコード理解</text>
+
+  <!-- Legend -->
+  <rect x="20" y="170" width="860" height="100" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="40" y="195" font-family="Meiryo, sans-serif" font-size="14" font-weight="bold" fill="#333">Copilotの活用度合い:</text>
+
+  <!-- High -->
+  <rect x="40" y="210" width="20" height="20" fill="url(#blueGrad)"/>
+  <text x="70" y="225" font-family="Meiryo, sans-serif" font-size="12" fill="#333">高（設計・開発フェーズで最も効果を発揮）</text>
+
+  <!-- Medium -->
+  <rect x="340" y="210" width="20" height="20" fill="url(#blueGrad)" opacity="0.7"/>
+  <text x="370" y="225" font-family="Meiryo, sans-serif" font-size="12" fill="#333">中（要件分析・テスト・メンテナンス）</text>
+
+  <!-- Low -->
+  <rect x="640" y="210" width="20" height="20" fill="url(#blueGrad)" opacity="0.5"/>
+  <text x="670" y="225" font-family="Meiryo, sans-serif" font-size="12" fill="#333">低（デプロイは間接的支援のみ）</text>
+
+  <!-- Note -->
+  <text x="40" y="255" font-family="Meiryo, sans-serif" font-size="11" fill="#E53935" font-weight="bold">
+    ★ 試験ポイント: Copilotはデプロイプロセスには直接関与せず、構成ファイルの作成支援のみ行う
+  </text>
+</svg>

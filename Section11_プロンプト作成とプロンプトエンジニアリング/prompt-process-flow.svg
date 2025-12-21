@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="inboundGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="outboundGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5CB85C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#449D44;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="llmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#357ABD" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#449D44" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#333">GitHub Copilot プロンプト プロセス フロー</text>
+
+  <!-- Inbound Flow Label -->
+  <rect x="20" y="55" width="150" height="30" rx="5" fill="url(#inboundGrad)"/>
+  <text x="95" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">インバウンドフロー</text>
+
+  <!-- Inbound Flow Boxes -->
+  <!-- 1. User Prompt -->
+  <rect x="30" y="100" width="120" height="70" rx="8" fill="url(#inboundGrad)" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="90" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">ユーザー</text>
+  <text x="90" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">プロンプト</text>
+
+  <!-- Arrow 1 -->
+  <line x1="150" y1="135" x2="175" y2="135" stroke="#357ABD" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- 2. HTTPS -->
+  <rect x="180" y="100" width="100" height="70" rx="8" fill="url(#inboundGrad)" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="230" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">HTTPS</text>
+  <text x="230" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">送信</text>
+
+  <!-- Arrow 2 -->
+  <line x1="280" y1="135" x2="305" y2="135" stroke="#357ABD" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- 3. Context Collection -->
+  <rect x="310" y="100" width="120" height="70" rx="8" fill="url(#inboundGrad)" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="370" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">コンテキスト</text>
+  <text x="370" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">収集</text>
+  <text x="370" y="159" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E8F4FD">(FIM手法)</text>
+
+  <!-- Arrow 3 -->
+  <line x1="430" y1="135" x2="455" y2="135" stroke="#357ABD" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- 4. Proxy Filter -->
+  <rect x="460" y="100" width="120" height="70" rx="8" fill="url(#inboundGrad)" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="520" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">プロキシ</text>
+  <text x="520" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">フィルター</text>
+  <text x="520" y="159" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#E8F4FD">(Azure)</text>
+
+  <!-- Arrow 4 -->
+  <line x1="580" y1="135" x2="605" y2="135" stroke="#357ABD" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- 5. Toxicity Filter -->
+  <rect x="610" y="100" width="120" height="70" rx="8" fill="url(#inboundGrad)" stroke="#2E6DA4" stroke-width="2"/>
+  <text x="670" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">有害性</text>
+  <text x="670" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">フィルタリング</text>
+
+  <!-- Arrow 5 -->
+  <line x1="730" y1="135" x2="755" y2="135" stroke="#357ABD" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- LLM (Center) -->
+  <rect x="760" y="85" width="120" height="100" rx="12" fill="url(#llmGrad)" stroke="#7D3C98" stroke-width="3"/>
+  <text x="820" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">LLM</text>
+  <text x="820" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E8D5F0">コード生成</text>
+  <text x="820" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#E8D5F0">モデル</text>
+
+  <!-- Outbound Flow Label -->
+  <rect x="20" y="210" width="150" height="30" rx="5" fill="url(#outboundGrad)"/>
+  <text x="95" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">アウトバウンドフロー</text>
+
+  <!-- Arrow from LLM to Outbound -->
+  <path d="M820,185 L820,220 L755,220 L755,290" stroke="#449D44" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <!-- Outbound Flow Boxes -->
+  <!-- 1. Post Processing -->
+  <rect x="695" y="255" width="120" height="70" rx="8" fill="url(#outboundGrad)" stroke="#398439" stroke-width="2"/>
+  <text x="755" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">後処理</text>
+  <text x="755" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">応答検証</text>
+
+  <!-- Arrow -->
+  <line x1="695" y1="290" x2="620" y2="290" stroke="#449D44" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- 2. Code Quality Check -->
+  <rect x="500" y="255" width="120" height="70" rx="8" fill="url(#outboundGrad)" stroke="#398439" stroke-width="2"/>
+  <text x="560" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">コード品質</text>
+  <text x="560" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">チェック</text>
+  <text x="560" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#D4EDDA">(XSS, SQL等)</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="290" x2="425" y2="290" stroke="#449D44" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- 3. Public Code Match -->
+  <rect x="305" y="255" width="120" height="70" rx="8" fill="url(#outboundGrad)" stroke="#398439" stroke-width="2"/>
+  <text x="365" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">公開コード</text>
+  <text x="365" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">一致チェック</text>
+  <text x="365" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#D4EDDA">(150文字超)</text>
+
+  <!-- Arrow -->
+  <line x1="305" y1="290" x2="230" y2="290" stroke="#449D44" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- 4. Code Suggestion -->
+  <rect x="110" y="255" width="120" height="70" rx="8" fill="url(#outboundGrad)" stroke="#398439" stroke-width="2"/>
+  <text x="170" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">コード提案</text>
+  <text x="170" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D4EDDA">ユーザーへ返却</text>
+
+  <!-- Feedback Loop -->
+  <rect x="20" y="360" width="860" height="120" rx="10" fill="#FFF3CD" stroke="#FFCC02" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="450" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#856404">フィードバックループ</text>
+
+  <!-- Feedback Items -->
+  <rect x="50" y="400" width="180" height="55" rx="6" fill="#FFC107" stroke="#E0A800" stroke-width="1"/>
+  <text x="140" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">受け入れられた提案</text>
+  <text x="140" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">→ 知識の増加</text>
+
+  <rect x="260" y="400" width="180" height="55" rx="6" fill="#FFC107" stroke="#E0A800" stroke-width="1"/>
+  <text x="350" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">変更と拒否</text>
+  <text x="350" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">→ 学習・改善</text>
+
+  <rect x="470" y="400" width="180" height="55" rx="6" fill="#FFC107" stroke="#E0A800" stroke-width="1"/>
+  <text x="560" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">継続的な処理</text>
+  <text x="560" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">→ 累積フィードバック</text>
+
+  <rect x="680" y="400" width="180" height="55" rx="6" fill="#FFC107" stroke="#E0A800" stroke-width="1"/>
+  <text x="770" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">ユーザー意図理解</text>
+  <text x="770" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">→ 機能改善</text>
+
+  <!-- Legend -->
+  <rect x="730" y="55" width="15" height="15" rx="3" fill="url(#inboundGrad)"/>
+  <text x="750" y="67" font-family="Arial, sans-serif" font-size="11" fill="#333">インバウンド</text>
+  <rect x="815" y="55" width="15" height="15" rx="3" fill="url(#outboundGrad)"/>
+  <text x="835" y="67" font-family="Arial, sans-serif" font-size="11" fill="#333">アウトバウンド</text>
+</svg>

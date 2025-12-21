@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <defs>
+    <marker id="arrowDown" markerWidth="10" markerHeight="7" refX="5" refY="0" orient="auto">
+      <polygon points="0 0, 10 0, 5 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <linearGradient id="llmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f">後処理とレスポンス検証フロー</text>
+
+  <!-- LLM Response -->
+  <rect x="320" y="60" width="160" height="50" rx="10" fill="url(#llmGrad)" stroke="#16a34a" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">LLMレスポンス</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="110" x2="400" y2="140" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Step 1: Toxicity Filter -->
+  <rect x="280" y="145" width="240" height="55" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#dc2626">トキシシティフィルター</text>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">有害コンテンツの除去</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="200" x2="400" y2="220" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Step 2: Code Quality Check -->
+  <rect x="280" y="225" width="240" height="55" rx="8" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#d97706">コード品質チェック</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">バグ・脆弱性の検出</text>
+
+  <!-- Quality Check Details -->
+  <rect x="550" y="210" width="200" height="85" rx="6" fill="#fff7ed" stroke="#fb923c" stroke-width="1"/>
+  <text x="650" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#c2410c">チェック項目</text>
+  <text x="560" y="250" font-family="Arial, sans-serif" font-size="10" fill="#7c2d12">- XSS脆弱性</text>
+  <text x="560" y="268" font-family="Arial, sans-serif" font-size="10" fill="#7c2d12">- SQLインジェクション</text>
+  <text x="560" y="286" font-family="Arial, sans-serif" font-size="10" fill="#7c2d12">- 一般的なバグ</text>
+  <line x1="520" y1="252" x2="545" y2="252" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Arrow -->
+  <line x1="400" y1="280" x2="400" y2="300" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Step 3: Public Code Matching -->
+  <rect x="280" y="305" width="240" height="55" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">パブリックコード照合</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">一致コードのフィルタリング</text>
+
+  <!-- Public Code Details -->
+  <rect x="50" y="290" width="200" height="85" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">照合条件</text>
+  <text x="60" y="330" font-family="Arial, sans-serif" font-size="10" fill="#1e3a8a">- 約150文字以上の提案</text>
+  <text x="60" y="348" font-family="Arial, sans-serif" font-size="10" fill="#1e3a8a">- GitHubパブリックコード</text>
+  <text x="60" y="366" font-family="Arial, sans-serif" font-size="10" fill="#1e3a8a">- 一致時: 切り詰め/破棄</text>
+  <line x1="255" y1="332" x2="275" y2="332" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Arrow -->
+  <line x1="400" y1="360" x2="400" y2="380" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Step 4: Final Delivery -->
+  <rect x="280" y="385" width="240" height="55" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534">ユーザーへ提案</text>
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">コード提案の表示</text>
+
+  <!-- IP Indemnity Note -->
+  <rect x="550" y="385" width="220" height="55" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="660" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400e">IP補償の条件</text>
+  <text x="560" y="425" font-family="Arial, sans-serif" font-size="10" fill="#78350f">Matching public code を</text>
+  <text x="560" y="438" font-family="Arial, sans-serif" font-size="10" fill="#dc2626" font-weight="bold">「Block」に設定する必要あり</text>
+
+  <!-- Process Time Note -->
+  <rect x="50" y="450" width="700" height="25" rx="5" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#166534">このプロセス全体は数ミリ秒〜数秒で完了し、リアルタイムでコード提案が行われます</text>
+</svg>

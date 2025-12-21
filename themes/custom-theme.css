@@ -1,0 +1,92 @@
+/* @theme custom-theme */
+
+@import 'default';
+
+section {
+  font-family: 'Meiryo', 'Hiragino Sans', sans-serif;
+  justify-content: flex-start;
+  padding-top: 80px;
+  position: relative;
+}
+
+h1 {
+  color: #333;
+  border-bottom: 3px solid #4A90D9;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+  margin: 0;
+}
+
+h2 {
+  color: #333;
+  border-left: 5px solid #4A90D9;
+  padding-left: 15px;
+}
+
+.red {
+  color: #E53935;
+  font-weight: bold;
+}
+
+.blue {
+  color: #4A90D9;
+}
+
+table {
+  font-size: 0.9em;
+}
+
+th {
+  background-color: #4A90D9;
+  color: white;
+}
+
+code {
+  background-color: #f5f5f5;
+}
+
+/* タイトルスライド用 */
+section.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  background: linear-gradient(to top, #4A90D9 80px, white 80px);
+}
+
+section.title h1 {
+  border-bottom: none;
+  font-size: 2.5em;
+  position: static;
+  text-align: center;
+}
+
+section.title h2 {
+  border-left: none;
+  color: #666;
+}
+
+section footer {
+  color: #999;
+}
+
+/* レクチャータイトルスライド用 */
+section.lecture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-left: 120px;
+  background: linear-gradient(to right, #4A90D9 80px, white 80px);
+}
+
+section.lecture h1 {
+  border-bottom: none;
+  font-size: 2.2em;
+  position: static;
+  text-align: left;
+}

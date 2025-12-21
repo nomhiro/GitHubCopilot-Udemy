@@ -1,4 +1,12 @@
-# セクション4: GitHub Copilotのプラン比較（31%の一部）
+# GitHub Copilotのプラン比較（31%の一部）
+
+## 対応プラン
+| 機能 | Free | Pro | Business | Enterprise |
+|------|:----:|:---:|:--------:|:----------:|
+| プラン比較情報 | ○ | ○ | ○ | ○ |
+| REST API管理 | - | - | ○ | ○ |
+| 監査ログ | - | - | ○ | ○ |
+| 使用状況メトリクス | - | - | ○ | ○ |
 
 ## 参照リソース
 - [GitHub Copilot プランと管理・カスタマイズ機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/2-explore-github-copilot-plans-associated-management-customization-features)
@@ -262,6 +270,96 @@ A: 主な違いはナレッジベース機能とプライベートコードベ�
 
 **Q: IP補償とは何ですか？**
 A: Copilotが生成したコードに関連する知的財産権の問題に対する法的保護。Business/Enterpriseで提供。
+
+---
+
+## レクチャー7: 組織監査ログとREST APIによる管理（Business/Enterprise）
+**時間目安: 12分**
+
+### 学習目標
+- Copilot REST APIの概要を理解する
+- シート管理APIの使用方法を把握する
+- 使用状況メトリクスの取得方法を理解する
+- 監査ログの活用方法を把握する
+
+### Copilot REST API概要
+
+GitHub Copilot REST APIで、ユーザー管理、使用状況追跡、アクセス制御が可能です。
+
+| 機能カテゴリ | 説明 |
+|-------------|------|
+| **シート情報取得** | ライセンス割り当て状況の確認 |
+| **ユーザー/チーム管理** | シートの追加・削除 |
+| **メトリクス取得** | 使用状況の分析 |
+
+### シート管理API
+
+#### 主なエンドポイント
+
+| エンドポイント | 用途 |
+|---------------|------|
+| `GET /orgs/{org}/copilot/billing` | シート情報と設定の取得 |
+| `GET /orgs/{org}/copilot/billing/seats` | 全シート割り当ての一覧 |
+| `POST /orgs/{org}/copilot/billing/selected_teams` | チームへのシート追加 |
+| `DELETE /orgs/{org}/copilot/billing/selected_teams` | チームからのシート削除 |
+| `POST /orgs/{org}/copilot/billing/selected_users` | ユーザーへのシート追加 |
+| `DELETE /orgs/{org}/copilot/billing/selected_users` | ユーザーからのシート削除 |
+
+### 使用状況メトリクスAPI
+
+#### 組織レベル
+
+| エンドポイント | 説明 |
+|---------------|------|
+| `GET /orgs/{org}/copilot/metrics` | 組織のCopilotメトリクス |
+| `GET /orgs/{org}/team/{team_slug}/copilot/metrics` | チームのメトリクス |
+
+#### エンタープライズレベル
+
+| エンドポイント | 説明 |
+|---------------|------|
+| `.../enterprise-1-day` | 日次エンタープライズ使用状況 |
+| `.../enterprise-28-day/latest` | 28日間の使用状況 |
+| `.../users-1-day` | 日次ユーザーレベル使用状況 |
+| `.../users-28-day/latest` | 28日間のユーザー使用状況 |
+
+> **注意**: これらのメトリクスはIDEテレメトリから取得され、GitHub.comでのCopilot Chatなど他のサーフェスのアクティビティは含まれません。
+
+### 監査ログの活用
+
+Copilot Businessでは、組織オーナーとエンタープライズ管理者がユーザーのアクションを確認できます。
+
+#### 監査ログの特徴
+
+| 特徴 | 内容 |
+|------|------|
+| **保持期間** | 過去180日間のイベント |
+| **対象イベント** | Copilot設定・ポリシーの変更、シートの追加・削除 |
+| **検索方法** | `action:copilot` 修飾子で検索 |
+
+#### 主なCopilot関連イベント
+
+| アクション | 説明 |
+|-----------|------|
+| `copilot.cfb_seat_assignment_created` | シートがユーザーに割り当てられた |
+| `copilot.cfb_seat_assignment_deleted` | シート割り当てが削除された |
+| `copilot.knowledge_base_created` | ナレッジベースが作成された |
+| `copilot.knowledge_base_updated` | ナレッジベースが更新された |
+| `copilot.knowledge_base_deleted` | ナレッジベースが削除された |
+
+### 検索例
+
+```
+action:copilot.cfb_seat_assignment_created
+```
+→ シート割り当てイベントを検索
+
+### まとめ
+
+- REST APIでCopilotのシート管理と使用状況追跡が可能
+- 組織レベルとエンタープライズレベルのメトリクスを取得可能
+- 監査ログは180日間保持され、`action:copilot`で検索可能
+- シート割り当て、ナレッジベース操作などのイベントが記録される
 
 ---
 

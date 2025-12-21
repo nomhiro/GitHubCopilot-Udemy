@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <linearGradient id="azureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00bcf2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f">プロキシサービスとフィルター処理</text>
+
+  <!-- User/IDE Box -->
+  <rect x="50" y="70" width="140" height="100" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  <text x="120" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e3a5f">ユーザー</text>
+  <text x="120" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">IDE</text>
+  <text x="120" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">(VS Code等)</text>
+
+  <!-- Azure Tenant Section -->
+  <rect x="230" y="55" width="340" height="400" rx="15" fill="#e0f2fe" stroke="#0078d4" stroke-width="3"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0369a1">GitHub所有のMicrosoft Azureテナント</text>
+
+  <!-- Proxy Server -->
+  <rect x="260" y="105" width="280" height="60" rx="8" fill="url(#azureGradient)" stroke="#0078d4" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">プロキシサーバー</text>
+  <text x="400" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e0f2fe">リクエスト転送 / レスポンス検証</text>
+
+  <!-- Filter 1: Proxy Filter -->
+  <rect x="280" y="190" width="240" height="55" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#dc2626">プロキシフィルター</text>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">不正なプロンプト操作の防止</text>
+
+  <!-- Filter 2: Toxicity Filter -->
+  <rect x="280" y="265" width="240" height="55" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#d97706">トキシシティフィルター</text>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">有害コンテンツの除外</text>
+
+  <!-- Filter 3: Personal Data Filter -->
+  <rect x="280" y="340" width="240" height="55" rx="8" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#7c3aed">個人データフィルター</text>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#64748b">プライバシー保護</text>
+
+  <!-- Arrows between filters -->
+  <line x1="400" y1="165" x2="400" y2="185" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="400" y1="245" x2="400" y2="260" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="400" y1="320" x2="400" y2="335" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="400" y1="395" x2="400" y2="420" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- To LLM -->
+  <text x="400" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">LLMへ送信</text>
+
+  <!-- LLM Box -->
+  <rect x="610" y="70" width="140" height="100" rx="10" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+  <text x="680" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">LLM</text>
+  <text x="680" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#dcfce7">(OpenAI)</text>
+  <text x="680" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#bbf7d0">コード生成</text>
+
+  <!-- Arrows -->
+  <line x1="190" y1="120" x2="225" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="207" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6">HTTPS</text>
+
+  <line x1="570" y1="120" x2="605" y2="120" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Filter descriptions -->
+  <rect x="50" y="220" width="170" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="135" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">フィルターの役割</text>
+  <text x="60" y="270" font-family="Arial, sans-serif" font-size="10" fill="#78350f">1. ヘイトスピーチ検出</text>
+  <text x="60" y="290" font-family="Arial, sans-serif" font-size="10" fill="#78350f">2. 不適切コンテンツ除外</text>
+  <text x="60" y="310" font-family="Arial, sans-serif" font-size="10" fill="#78350f">3. 個人情報保護</text>
+  <text x="60" y="330" font-family="Arial, sans-serif" font-size="10" fill="#78350f">4. プロンプトハッキング</text>
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="10" fill="#78350f">   攻撃の防止</text>
+  <text x="60" y="375" font-family="Arial, sans-serif" font-size="10" fill="#78350f">5. 機密情報漏洩防止</text>
+
+  <!-- Note -->
+  <rect x="50" y="460" width="700" height="30" rx="5" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#166534">Business/Enterpriseプラン: ユーザーコードはモデルトレーニングに使用されません</text>
+</svg>

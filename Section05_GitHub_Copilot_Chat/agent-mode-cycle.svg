@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90D9"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Meiryo, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">エージェントモードの反復サイクル</text>
+
+  <!-- Step 1: 分析 -->
+  <rect x="50" y="80" width="150" height="100" rx="10" fill="#4A90D9" stroke="#3a7bc8" stroke-width="2"/>
+  <text x="125" y="120" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">1. 分析</text>
+  <text x="125" y="145" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">関連ファイルと</text>
+  <text x="125" y="162" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">依存関係を決定</text>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 200 130 L 250 130" stroke="#4A90D9" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: 提案と実行 -->
+  <rect x="250" y="80" width="150" height="100" rx="10" fill="#5cb85c" stroke="#4cae4c" stroke-width="2"/>
+  <text x="325" y="120" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">2. 提案と実行</text>
+  <text x="325" y="145" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">コード変更を提案</text>
+  <text x="325" y="162" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">して実行</text>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 400 130 L 450 130" stroke="#4A90D9" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: コマンド実行 -->
+  <rect x="450" y="80" width="150" height="100" rx="10" fill="#f0ad4e" stroke="#eea236" stroke-width="2"/>
+  <text x="525" y="115" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">3. コマンド</text>
+  <text x="525" y="135" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">実行</text>
+  <text x="525" y="162" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">ターミナル操作</text>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 600 130 L 650 130" stroke="#4A90D9" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: 監視と調整 -->
+  <rect x="650" y="80" width="130" height="100" rx="10" fill="#d9534f" stroke="#d43f3a" stroke-width="2"/>
+  <text x="715" y="115" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">4. 監視と</text>
+  <text x="715" y="135" font-family="Meiryo, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">調整</text>
+  <text x="715" y="162" font-family="Meiryo, sans-serif" font-size="11" text-anchor="middle" fill="white">出力を改善</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M 715 180 L 715 250 L 125 250 L 125 180" stroke="#4A90D9" stroke-width="3" fill="none" stroke-dasharray="8,4" marker-end="url(#arrowhead)"/>
+
+  <!-- Loop label -->
+  <rect x="350" y="235" width="100" height="30" rx="5" fill="#e9ecef"/>
+  <text x="400" y="255" font-family="Meiryo, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4A90D9">反復処理</text>
+
+  <!-- Description boxes -->
+  <rect x="50" y="300" width="700" height="80" rx="8" fill="#e7f3ff" stroke="#4A90D9" stroke-width="1"/>
+  <text x="400" y="330" font-family="Meiryo, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">ポイント: 開発者を完全に制御しながら、独自の提案を継続的に改善</text>
+  <text x="400" y="355" font-family="Meiryo, sans-serif" font-size="12" text-anchor="middle" fill="#666">各ステップで開発者がレビュー・承認可能。エラーが発生した場合は自律的に修正を試みる。</text>
+</svg>

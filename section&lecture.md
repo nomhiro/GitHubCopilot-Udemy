@@ -45,7 +45,7 @@
 
 ---
 
-## セクション4: GitHub Copilotのプラン比較（31%の一部）- 6レクチャー
+## セクション4: GitHub Copilotのプラン比較（31%の一部）- 7レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -55,12 +55,39 @@
 | 4 | Copilot Enterpriseの機能とナレッジベース | 15分 |
 | 5 | 各プランの違い比較（データ除外・IP補償・請求） | 10分 |
 | 6 | 【ハンズオン】プランの選び方と導入手順 | 8分 |
+| 7 | 組織監査ログとREST APIによる管理 | 12分 |
 
 **参照**: [GitHub Copilot プランと管理・カスタマイズ機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-management-and-customizations/2-explore-github-copilot-plans-associated-management-customization-features)
 
 ---
 
-## セクション5: GitHub Copilot コーディングエージェント - 6レクチャー
+## セクション5: GitHub Copilot Chat & エージェントモード（31%の一部）- 12レクチャー
+
+| # | レクチャータイトル | 時間目安 |
+|---|-------------------|---------|
+| 1 | Copilot Chatの概要と効果的なユースケース | 10分 |
+| 2 | スラッシュコマンド一覧と使い方 | 12分 |
+| 3 | 【ハンズオン】Chatを使ったコード説明・生成 | 15分 |
+| 4 | チャットエージェントの活用方法 | 10分 |
+| 5 | Copilot Chatの制限事項とベストプラクティス | 10分 |
+| 6 | フィードバックの共有方法 | 5分 |
+| 7 | GitHub Copilot エージェントモードの概要 | 12分 |
+| 8 | エージェントモードの自律開発支援機能 | 12分 |
+| 9 | MCPとエージェントモードの連携 | 10分 |
+| 10 | GitHub.comでのCopilot Chat活用 | 12分 |
+| 11 | カスタムモデルとエージェント設定 | 10分 |
+| 12 | 【確認テスト】Copilot Chat & エージェントモード | 10分 |
+
+**参照**:
+- [GitHub Copilot の高度な機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/advanced-github-copilot/2-advanced-github-copilot-features)
+- [GitHub Copilot チャット - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/3-git-hub-copilot-chat)
+- [GitHub Copilot エージェント モードとは - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/2-what-is-agent-mode)
+- [GitHub Copilot エージェントモードの自律開発支援 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/3-explore-the-power)
+- [Copilot チャットでの GitHub MCP サーバーの使用 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/4-use-github-copilot-chat)
+
+---
+
+## セクション6: GitHub Copilot コーディングエージェント - 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -78,7 +105,7 @@
 
 ---
 
-## セクション6: GitHub Copilot コードレビューとPull Request - 7レクチャー
+## セクション7: GitHub Copilot コードレビューとPull Request - 7レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -98,80 +125,22 @@
 
 ---
 
-## セクション7: IDEでのGitHub Copilot活用（31%の一部）- 9レクチャー
+## セクション8: GitHub Copilot Spaces - 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
-| 1 | IDEへのGitHub Copilotインストールと設定 | 10分 |
-| 2 | コード補完機能の使い方 | 12分 |
-| 3 | 【ハンズオン】インライン提案と複数提案の操作 | 15分 |
-| 4 | インラインチャットの活用方法 | 10分 |
-| 5 | 【ハンズオン】インラインチャットでコードを修正する | 12分 |
-| 6 | 例外処理とエラー対応の提案活用 | 10分 |
-| 7 | Editor設定ファイルの構成 | 8分 |
-| 8 | GitHub MCP ServerによるAIワークフローの強化 | 10分 |
-| 9 | 【確認テスト】IDEでのCopilot活用 | 5分 |
-
-**参照**:
-- [GitHub MCP Server を使用して AI ワークフローを簡素化する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/2-simplify-workflow)
-- [VS Code で GitHub MCP サーバーを構成、接続、および使用する - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/3-configure-connect)
-
----
-
-## セクション8: GitHub Copilot Chat & エージェントモード（31%の一部）- 10レクチャー
-
-| # | レクチャータイトル | 時間目安 |
-|---|-------------------|---------|
-| 1 | Copilot Chatの概要と効果的なユースケース | 10分 |
-| 2 | スラッシュコマンド一覧と使い方 | 12分 |
-| 3 | 【ハンズオン】Chatを使ったコード説明・生成 | 15分 |
-| 4 | チャットエージェントの活用方法 | 10分 |
-| 5 | Copilot Chatの制限事項とベストプラクティス | 10分 |
-| 6 | フィードバックの共有方法 | 5分 |
-| 7 | GitHub Copilot エージェントモードの概要 | 12分 |
-| 8 | エージェントモードの自律開発支援機能 | 12分 |
-| 9 | MCPとエージェントモードの連携 | 10分 |
-| 10 | 【確認テスト】Copilot Chat & エージェントモード | 10分 |
-
-**参照**:
-- [GitHub Copilot の高度な機能 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/advanced-github-copilot/2-advanced-github-copilot-features)
-- [GitHub Copilot チャット - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/3-git-hub-copilot-chat)
-- [GitHub Copilot エージェント モードとは - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/2-what-is-agent-mode)
-- [GitHub Copilot エージェントモードの自律開発支援 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-agent-mode/3-explore-the-power)
-- [Copilot チャットでの GitHub MCP サーバーの使用 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/mcp-server/4-use-github-copilot-chat)
-
----
-
-## セクション9: GitHub Copilot Enterprise機能（31%の一部）- 6レクチャー
-
-| # | レクチャータイトル | 時間目安 |
-|---|-------------------|---------|
-| 1 | GitHub.comでのCopilotアクセスと概要 | 12分 |
-| 2 | Pull Request支援機能 | 12分 |
-| 3 | ナレッジベースの概念と利点 | 12分 |
-| 4 | ナレッジベースの作成・管理・検索手順 | 15分 |
-| 5 | カスタムモデルの活用 | 10分 |
-| 6 | 組織監査ログとREST APIによる管理 | 12分 |
-
-**参照**: [GitHub.com 上の GitHub Copilot - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/github-copilot-across-environments/4-git-hub-copilot-github-web)
-
----
-
-## セクション10: GitHub Copilot Spaces - 5レクチャー
-
-| # | レクチャータイトル | 時間目安 |
-|---|-------------------|---------|
-| 1 | GitHub Copilot Spacesとは（概要と利点） | 10分 |
-| 2 | 最初のスペースの作成 | 10分 |
-| 3 | 共有、検出可能性、ガバナンス | 10分 |
-| 4 | スペースで作業する際のベストプラクティス | 8分 |
-| 5 | 【確認テスト】GitHub Copilot Spaces | 5分 |
+| 1 | ナレッジベースとCopilot Spaces | 12分 |
+| 2 | GitHub Copilot Spacesとは（概要と利点） | 10分 |
+| 3 | 最初のスペースの作成 | 10分 |
+| 4 | 共有、検出可能性、ガバナンス | 10分 |
+| 5 | スペースで作業する際のベストプラクティス | 8分 |
+| 6 | 【確認テスト】GitHub Copilot Spaces | 5分 |
 
 **参照**: [GitHub Copilot Spaces の概要 - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/introduction-copilot-spaces/)
 
 ---
 
-## セクション11: CLIでのGitHub Copilot（31%の一部）- 5レクチャー
+## セクション9: CLIでのGitHub Copilot（31%の一部）- 5レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -185,7 +154,7 @@
 
 ---
 
-## セクション12: GitHub Copilotのしくみとデータ処理（15%）- 7レクチャー
+## セクション10: GitHub Copilotのしくみとデータ処理（15%）- 7レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -199,7 +168,7 @@
 
 ---
 
-## セクション13: プロンプト作成とプロンプトエンジニアリング（9%）- 8レクチャー
+## セクション11: プロンプト作成とプロンプトエンジニアリング（9%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -216,7 +185,7 @@
 
 ---
 
-## セクション14: AIの開発者ユースケース（14%）- 8レクチャー
+## セクション12: AIの開発者ユースケース（14%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -236,7 +205,7 @@
 
 ---
 
-## セクション15: GitHub Copilotを使用したテスト（9%）- 6レクチャー
+## セクション13: GitHub Copilotを使用したテスト（9%）- 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -255,7 +224,7 @@
 
 ---
 
-## セクション16: プライバシーとコンテキスト除外（15%）- 8レクチャー
+## セクション14: プライバシーとコンテキスト除外（15%）- 8レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -274,7 +243,7 @@
 
 ---
 
-## セクション17: セキュリティ・パフォーマンス・トラブルシューティング - 6レクチャー
+## セクション15: セキュリティ・パフォーマンス・トラブルシューティング - 6レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -289,7 +258,7 @@
 
 ---
 
-## セクション18: 試験対策と総まとめ - 5レクチャー
+## セクション16: 試験対策と総まとめ - 5レクチャー
 
 | # | レクチャータイトル | 時間目安 |
 |---|-------------------|---------|
@@ -305,9 +274,9 @@
 
 | 項目 | 数値 |
 |------|------|
-| **総セクション数** | 18セクション |
-| **総レクチャー数** | 115レクチャー |
-| **推定総時間** | 約16〜17時間 |
-| **ハンズオン数** | 14本 |
-| **確認テスト** | 8本 |
+| **総セクション数** | 16セクション |
+| **総レクチャー数** | 103レクチャー |
+| **推定総時間** | 約14〜15時間 |
+| **ハンズオン数** | 12本 |
+| **確認テスト** | 7本 |
 | **模擬試験** | 2回（計60問） |

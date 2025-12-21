@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .start-end { fill: #e8f5e9; stroke: #4caf50; stroke-width: 2; }
+      .process { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .decision { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .action { fill: #fce4ec; stroke: #e91e63; stroke-width: 2; }
+      .text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; fill: #333; }
+      .text-small { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #666; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #4caf50; font-weight: bold; }
+      .label-no { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #f44336; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="text" style="font-size: 18px; font-weight: bold;">コード提案が表示されない場合のトラブルシューティングフロー</text>
+
+  <!-- Start -->
+  <ellipse cx="450" cy="70" rx="100" ry="25" class="start-end"/>
+  <text x="450" y="75" text-anchor="middle" class="text">提案が表示されない</text>
+
+  <!-- Arrow to first decision -->
+  <path d="M 450 95 L 450 130" class="arrow"/>
+
+  <!-- Decision 1: Internet -->
+  <polygon points="450,130 550,180 450,230 350,180" class="decision"/>
+  <text x="450" y="175" text-anchor="middle" class="text">インターネット</text>
+  <text x="450" y="190" text-anchor="middle" class="text">接続OK?</text>
+
+  <!-- NO path to action 1 -->
+  <path d="M 550 180 L 650 180 L 650 180" class="arrow"/>
+  <text x="580" y="170" class="label-no">NO</text>
+  <rect x="650" y="155" width="180" height="50" rx="5" class="action"/>
+  <text x="740" y="177" text-anchor="middle" class="text">ネットワーク問題を</text>
+  <text x="740" y="193" text-anchor="middle" class="text">解決する</text>
+
+  <!-- YES path to decision 2 -->
+  <path d="M 450 230 L 450 265" class="arrow"/>
+  <text x="460" y="250" class="label">YES</text>
+
+  <!-- Decision 2: Extension -->
+  <polygon points="450,265 550,315 450,365 350,315" class="decision"/>
+  <text x="450" y="310" text-anchor="middle" class="text">拡張機能は</text>
+  <text x="450" y="325" text-anchor="middle" class="text">最新?</text>
+
+  <!-- NO path to action 2 -->
+  <path d="M 550 315 L 650 315 L 650 315" class="arrow"/>
+  <text x="580" y="305" class="label-no">NO</text>
+  <rect x="650" y="290" width="180" height="50" rx="5" class="action"/>
+  <text x="740" y="312" text-anchor="middle" class="text">拡張機能を</text>
+  <text x="740" y="328" text-anchor="middle" class="text">更新する</text>
+
+  <!-- YES path to decision 3 -->
+  <path d="M 450 365 L 450 400" class="arrow"/>
+  <text x="460" y="385" class="label">YES</text>
+
+  <!-- Decision 3: IDE -->
+  <polygon points="280,400 350,440 280,480 210,440" class="decision"/>
+  <text x="280" y="437" text-anchor="middle" class="text">IDE</text>
+  <text x="280" y="452" text-anchor="middle" class="text">対応?</text>
+
+  <!-- Arrow from YES to Decision 3 -->
+  <path d="M 450 400 L 450 410 L 350 440" class="arrow" style="marker-end: none;"/>
+  <path d="M 350 440 L 350 440" class="arrow"/>
+
+  <!-- NO path to action 3 -->
+  <path d="M 210 440 L 80 440" class="arrow"/>
+  <text x="160" y="430" class="label-no">NO</text>
+  <rect x="20" y="415" width="130" height="50" rx="5" class="action"/>
+  <text x="85" y="437" text-anchor="middle" class="text">対応IDEに</text>
+  <text x="85" y="453" text-anchor="middle" class="text">移行する</text>
+
+  <!-- Decision 4: Content exclusion -->
+  <polygon points="450,400 520,440 450,480 380,440" class="decision"/>
+  <text x="450" y="432" text-anchor="middle" class="text">コンテンツ</text>
+  <text x="450" y="447" text-anchor="middle" class="text">除外?</text>
+
+  <!-- Arrow from Decision 3 YES to Decision 4 -->
+  <path d="M 350 440 L 380 440" class="arrow"/>
+  <text x="310" y="420" class="label">YES</text>
+
+  <!-- YES path to action 4 -->
+  <path d="M 520 440 L 620 440" class="arrow"/>
+  <text x="555" y="430" class="label">YES</text>
+  <rect x="620" y="415" width="180" height="50" rx="5" class="action"/>
+  <text x="710" y="437" text-anchor="middle" class="text">除外設定を</text>
+  <text x="710" y="453" text-anchor="middle" class="text">確認・変更する</text>
+
+  <!-- NO path to support -->
+  <path d="M 450 480 L 450 485" class="arrow" style="marker-end: none;"/>
+  <text x="460" y="492" class="label-no">NO</text>
+
+  <!-- End: Support -->
+  <ellipse cx="450" cy="520" rx="120" ry="25" class="start-end"/>
+  <text x="450" y="525" text-anchor="middle" class="text">GitHubサポートに問い合わせ</text>
+
+  <!-- Arrow to end -->
+  <path d="M 450 485 L 450 495" class="arrow"/>
+
+</svg>

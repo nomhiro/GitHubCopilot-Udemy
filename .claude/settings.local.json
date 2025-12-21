@@ -47,7 +47,10 @@
       "Bash(head:*)",
       "Bash(done)",
       "Bash(wc:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git mv:*)",
+      "Skill(marp-slide)",
+      "Skill(marp-slide:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

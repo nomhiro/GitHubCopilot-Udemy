@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0969da"/>
+    </marker>
+    <linearGradient id="inboundGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="outboundGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a5f">GitHub Copilot データパイプライン</text>
+
+  <!-- Inbound Flow Section -->
+  <rect x="30" y="60" width="840" height="130" rx="10" fill="url(#inboundGradient)" stroke="#3b82f6" stroke-width="2"/>
+  <text x="50" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">インバウンドフロー</text>
+
+  <!-- Inbound Flow Boxes -->
+  <rect x="50" y="100" width="120" height="70" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="110" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">ユーザー入力</text>
+  <text x="110" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">コード・コメント</text>
+
+  <rect x="220" y="100" width="120" height="70" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="280" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">コンテキスト</text>
+  <text x="280" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">収集</text>
+  <text x="280" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">周辺コード取得</text>
+
+  <rect x="390" y="100" width="120" height="70" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="450" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">プロキシ</text>
+  <text x="450" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">フィルター</text>
+  <text x="450" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">不正操作防止</text>
+
+  <rect x="560" y="100" width="120" height="70" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="620" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">トキシシティ</text>
+  <text x="620" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">フィルター</text>
+  <text x="620" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">有害コンテンツ除外</text>
+
+  <rect x="730" y="100" width="120" height="70" rx="8" fill="#60a5fa" stroke="#3b82f6" stroke-width="2"/>
+  <text x="790" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">LLM</text>
+  <text x="790" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">コード生成</text>
+
+  <!-- Inbound Arrows -->
+  <line x1="170" y1="135" x2="215" y2="135" stroke="#0969da" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="135" x2="385" y2="135" stroke="#0969da" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="135" x2="555" y2="135" stroke="#0969da" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="680" y1="135" x2="725" y2="135" stroke="#0969da" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Outbound Flow Section -->
+  <rect x="30" y="210" width="840" height="130" rx="10" fill="url(#outboundGradient)" stroke="#22c55e" stroke-width="2"/>
+  <text x="50" y="235" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534">アウトバウンドフロー</text>
+
+  <!-- Outbound Flow Boxes -->
+  <rect x="50" y="250" width="120" height="70" rx="8" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+  <text x="110" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">LLM</text>
+  <text x="110" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">レスポンス生成</text>
+
+  <rect x="220" y="250" width="120" height="70" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="280" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">後処理</text>
+  <text x="280" y="293" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">検証</text>
+  <text x="280" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">品質チェック</text>
+
+  <rect x="390" y="250" width="120" height="70" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="450" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">パブリック</text>
+  <text x="450" y="293" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">コード照合</text>
+  <text x="450" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">一致確認</text>
+
+  <rect x="560" y="250" width="120" height="70" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="620" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">フィルタリング</text>
+  <text x="620" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">最終チェック</text>
+
+  <rect x="730" y="250" width="120" height="70" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="790" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e3a5f">ユーザーへ提案</text>
+  <text x="790" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">コード表示</text>
+
+  <!-- Outbound Arrows -->
+  <line x1="170" y1="285" x2="215" y2="285" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="285" x2="385" y2="285" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="285" x2="555" y2="285" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="680" y1="285" x2="725" y2="285" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Feedback Loop -->
+  <path d="M 790 320 L 790 360 L 110 360 L 110 320" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="450" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#d97706">フィードバックループ（承認/拒否/編集）</text>
+</svg>
