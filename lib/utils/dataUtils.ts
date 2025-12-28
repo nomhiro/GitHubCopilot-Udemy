@@ -11,8 +11,7 @@
  */
 export function addDays(date: Date, days: number): Date {
   const result = new Date(date);
-  // BUG: getDate() + days で直接設定すると月末で問題が発生
-  // 例: 1月31日に1日追加すると、2月31日(存在しない)になり、3月3日になってしまう
+  // JavaScriptのsetDate()は月境界を自動的に処理する
   result.setDate(result.getDate() + days);
   return result;
 }
@@ -24,8 +23,7 @@ export function addDays(date: Date, days: number): Date {
  * @returns 指定した年月の月末日付
  */
 export function getMonthEnd(year: number, month: number): Date {
-  // BUG: 月をそのまま使うと次月の0日目になり、意図した動作になる
-  // しかし、month=12の時に13月0日となり、翌年の1月0日(12月31日)を返してしまう
+  // 次月の0日目は前月の最終日を返す
   return new Date(year, month, 0);
 }
 
@@ -37,8 +35,7 @@ export function getMonthEnd(year: number, month: number): Date {
 export function getLastDayOfMonth(date: Date): Date {
   const year = date.getFullYear();
   const month = date.getMonth();
-  // BUG: 次月の0日を取得する方法は正しいが、
-  // 時刻情報が引き継がれないため、時刻が00:00:00になる
+  // 次月の0日を取得することで、その月の最終日を取得
   return new Date(year, month + 1, 0);
 }
 
@@ -49,8 +46,7 @@ export function getLastDayOfMonth(date: Date): Date {
  */
 export function isMonthEnd(date: Date): boolean {
   const nextDay = addDays(date, 1);
-  // BUG: addDays関数のバグの影響を受ける
-  // 月末日に1日追加した場合、正しく翌月1日にならない可能性がある
+  // 翌日の月が異なる場合、その日は月末
   return nextDay.getMonth() !== date.getMonth();
 }
 
@@ -71,8 +67,15 @@ export function getFirstDayOfMonth(date: Date): Date {
  */
 export function addMonths(date: Date, months: number): Date {
   const result = new Date(date);
+  const originalDay = date.getDate();
   result.setMonth(result.getMonth() + months);
-  // BUG: 月末日の処理が不適切
-  // 例: 1月31日に1ヶ月追加すると、2月31日(存在しない)になり、3月3日or3月2日になる
+  
+  // FIX: 月末日の処理を適切に処理
+  // 目的の月に元の日が存在しない場合（例: 1月31日→2月）、
+  // その月の最終日に調整する
+  if (result.getDate() !== originalDay) {
+    // setDateが原因で日付が繰り越された場合、前月の最終日に設定
+    result.setDate(0);
+  }
   return result;
 }
